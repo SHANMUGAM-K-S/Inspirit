@@ -1,0 +1,119 @@
+.career h3 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(4, 4, 109);
+}
+
+.sec {
+    width: 100%;
+    height: 90vh;
+    background-image: url(./assets/ins.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -20px;
+    overflow: hidden;
+    display: flex;
+}
+
+/* 
+.second {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/add3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    margin-bottom: 5px;
+    border-bottom-left-radius: 120px;
+    display: flex;
+} */
+
+.seconds {
+    width: 100%;
+    height: 90vh;
+    background-image: url(./assets/sendmessage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+}
+
+.c1 {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20%;
+    padding-right: 20%;
+    background: rgb(249, 245, 245);
+}
+
+.c1 h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: rgb(2, 2, 116);
+    margin-top: -10px;
+}
+
+.c1 h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin-top: -25px;
+}
+
+.cnt {
+    background: white;
+    width: 400px;
+    height: 520px;
+    margin-top: 40px;
+    margin-left: 900px;
+    border-radius: 5px;
+}
+
+.cnt h1 {
+    color: rgb(5, 5, 93);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cnt form {
+    margin-left: 30px;
+
+}
+
+.cnt form input {
+    width: 330px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(57, 56, 56);
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 2px solid black;
+
+}
+
+.cnt form textarea {
+    height: 120px;
+    font-family: 'Poppins', sans-serif;
+    width: 340px;
+    border: 2px solid black;
+}
+
+.cnt form label {
+    font-family: 'Poppins', sans-serif;
+}
+
+.cnt form .inp {
+    border: 1px dashed black;
+}
+
+.cnt form button {
+    margin-left: 100px;
+    padding: 5px 55px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    background: red;
+}
