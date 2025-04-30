@@ -22,6 +22,7 @@ function ServiceHomePage() {
                     <button onClick={handleClick1}>Mechanical Services</button>
                 </div>
                 <div className="btn2">
+
                     <button onClick={handleClick2}>Software Services</button>
                 </div>
             </div>

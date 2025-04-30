@@ -34,15 +34,21 @@ import MechanicalServices from './components/MechanicalServices'
 import SoftwareServices from './components/SoftwareServices'
 import AutomotiveServices from './components/AutomotiveServices'
 import About from './components/About'
+import ScrollToTop from './components/ScrollToTop'
+
+
+
 
 const App = () => {
   return (
     <div>
+
       <BrowserRouter>
+        <ScrollToTop />
         <Navbar />
+
         <Routes>
           <Route path='/' element={<Section2 />} />
-
           <Route path='/career' element={<Careers />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/about' element={<About />} />

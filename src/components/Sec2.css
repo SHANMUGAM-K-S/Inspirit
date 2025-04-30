@@ -207,10 +207,10 @@
     border-radius: 10px;
 }
 
-.shanmugam:active {
+/* .shanmugam:active {
     background-image: url(https://cdna.artstation.com/p/assets/images/images/019/666/018/original/matthew-harris-edwards-lightning-flashes.gif?1564501434);
     color: white;
-}
+} */
 
 .shanmugam h3 {
     font-size: 3rem;
@@ -223,7 +223,7 @@
 
 .shanmugam strong {
     color: rgb(11, 11, 189);
-    font-size: 19px;
+    font-size: 18px;
 }
 
 
@@ -442,6 +442,22 @@
     padding-top: -20px;
 }
 
+.page-enter {
+    transform: translateY(100vh);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.page-enter-active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.vision img {
+    width: 100vw;
+    height: 100vh;
+}
+
 @media (max-width:834px) {
     .intro {
         height: 800px;
@@ -462,9 +478,10 @@
     }
 
     .shanmugam p {
-        margin-top: 10px;
+
         max-width: 800px;
-        padding: none;
+        padding: 15px;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     .image-section img {
@@ -553,6 +570,7 @@
 
     .shanmugam p {
         margin-top: -35px;
+
     }
 
     .text-section h3 {

@@ -79,13 +79,15 @@
 
 
 import React, { useState, useEffect, useRef } from "react";
-import "./Nav.css";
+import "./Nav.css"; import { useLocation } from "react-router-dom";
+
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
     const [clicked, setClicked] = useState(false);
     const navigate = useNavigate();
     const navRef = useRef(null);
+    const location = useLocation();
 
     const handleClick = () => {
         setClicked(!clicked);
@@ -106,36 +108,57 @@ const Navbar = () => {
     const handleNavigation = (path) => {
         navigate(path);
         setClicked(false);
+        window.scrollTo(0, 0);
     };
-    // function home() {
-    //     navigate('/')
-    // }
-    // function service() {
-    //     navigate('/service')
-    // }
-    // function career() {
-    //     navigate('/career')
-    // }
-    // // function about() {
-    // //     navigate('/about')
-    // // }
-    // function contact() {
-    //     navigate('/contact')
-    // }
+
+    const styles = {
+        fontSize: '14px',
+        whiteSpace: 'nowrap'
+    }
+    const style = {
+        fontSize: '12px', whiteSpace: 'nowrap', margin: '-30px', color: 'gray',
+    }
     return (
         <nav ref={navRef}>
             <img
                 src="https://static.wixstatic.com/media/fbe21a_6f3f12bd11ae4ba19718ab8eed376993~mv2.webp/v1/fill/w_248,h_94,al_c,lg_1,q_80,enc_avif,quality_auto/fbe21a_6f3f12bd11ae4ba19718ab8eed376993~mv2.webp"
-                alt="Logo"
+                alt="Logo" onClick={() => handleNavigation("/")}
             />
 
             <div className={clicked ? "nav-menu active" : "nav-menu"}>
                 <ul id="navbar" className={clicked ? "navbar active" : "navbar"}>
-                    {location.pathname !== "/" && <li><a onClick={() => handleNavigation("/")} href="#">Home</a></li>}
-                    {location.pathname !== "/service" && <li><a href="#" onClick={() => handleNavigation("/service")}>Services</a></li>}
-                    {location.pathname !== "/career" && <li><a href="#" onClick={() => handleNavigation("/career")}>Careers</a></li>}
+                    {location.pathname !== "/" && <li><a onClick={() => handleNavigation("/")}>Home</a></li>}
+                    <li className="dropdown">
+                        <a href="#" onClick={() => handleNavigation('/service')} >Services</a>
+                        <ul className="dropdown-menu ">
+                            <li className="dropdowns"><a style={styles} onClick={() => handleNavigation("/MechanicalServices")}>Mechanical Services</a>
+                                <hr />
+                                <ul className="dropdown-menus">
+                                    <li><a href="#" onClick={() => handleNavigation("/AutomotiveServices")} style={{ fontSize: '12px', whiteSpace: 'nowrap', margin: '-30px', }}>Automotive</a></li>
+                                    <li><a href="#" style={style}>Automation</a></li>
+                                    <li><a href="#" style={style}>CAD Services</a></li>
+                                    <li><a href="#" style={style}>Manufacturing</a></li>
+                                    <li><a href="#" style={style}>System integration</a></li>
+                                    <li><a href="#" style={style}>Special Purpose Machines</a></li>
+                                    <li><a href="#" style={style}>Pneaumatics</a></li>
+                                </ul>
+                            </li>
+                            <li className="software"><a style={styles} onClick={() => handleNavigation("/SoftwareServices")}>Software Services</a>
+                                <hr />
+
+                                <ul className="softwares">
+                                    <li><a href="#" style={style}>Web Development</a></li>
+                                    <li><a href="#" style={style}>Software Services</a></li>
+
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li><a onClick={() => handleNavigation("/career")}>Careers</a></li>
                     {/* <li><a href="/about" onClick={() => setClicked(false)}>About</a></li> */}
-                    {location.pathname !== "/contact" && (<li><a href="#" onClick={() => handleNavigation("/contact")}>Contact</a></li>)}
+                    <li><a onClick={() => handleNavigation("/contact")}>Contact</a></li>
                 </ul>
             </div>
 

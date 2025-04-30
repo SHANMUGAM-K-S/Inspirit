@@ -1,13 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Sec2.css";
-import Footer from "./Footer";
+
 
 const Section2 = () => {
     const textRef = useRef(null);
     const imageRef = useRef(null);
     const engineerRefTop = useRef(null);
     const engineerRefBottom = useRef(null);
-    const [isBlasted, setIsBlasted] = useState(false);
+    const [isBlasted, setIsBlasted] = useState(false); const [visible, setVisible] = useState(false);
 
     const handleBlast = () => {
         setIsBlasted(true);
@@ -16,6 +16,7 @@ const Section2 = () => {
         }, 1000);
     };
     useEffect(() => {
+        setVisible(true);
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
@@ -52,7 +53,7 @@ const Section2 = () => {
     }, []);
 
     return (
-        <div>
+        <div className={visible ? "page-enter-active" : "page-enter"}>
 
             <div className="intro">
                 <div className="heading">

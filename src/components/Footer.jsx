@@ -153,6 +153,9 @@ const Footer = () => {
     function contact() {
         navigate('/contact')
     }
+    function linkedin() {
+        window.location.href = "https://www.linkedin.com/company/inspirit-engineering-solutions/?originalSubdomain=in"
+    }
     return (
         <div className='foot'>
             <div className="footer" ref={footerRef}>
@@ -188,7 +191,7 @@ const Footer = () => {
                         <button type="submit" disabled={state.submitting}>Send</button>
                     </form>
 
-                    <i className="fab fa-linkedin-in"></i>
+                    <i className="fab fa-linkedin-in" onClick={linkedin}></i>
                 </div>
 
                 <hr />
