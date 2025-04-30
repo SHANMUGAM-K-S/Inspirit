@@ -6,12 +6,14 @@
     flex-wrap: wrap;
     min-height: 100vh;
     padding: 40px;
+    background-image: url(https://static.wixstatic.com/media/fbe21a_eb1cd189efc64ca2927b12a189d73ea4f000.jpg/v1/fill/w_1521,h_503,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/fbe21a_eb1cd189efc64ca2927b12a189d73ea4f000.jpg);
 }
 
 .container2 .btn1,
 .container2 .btn2 {
     flex: 1 1 300px;
     max-width: 400px;
+    background-image: url(https://www.theindustryoutlook.com/uploaded_images/newstransfer/robt8mech_123.jpg);
 }
 
 .container2 button {
@@ -20,12 +22,12 @@
     border: none;
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    color: white;
+    /* backdrop-filter: blur(10px); */
+    /* -webkit-backdrop-filter: blur(10px); */
+
     font-size: 28px;
-    font-weight: bold;
-    color: rgb(116, 185, 254);
+    font-weight: 800;
+    color: black;
     cursor: pointer;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;

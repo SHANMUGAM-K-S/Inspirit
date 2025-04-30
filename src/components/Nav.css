@@ -145,6 +145,9 @@ nav {
     justify-content: space-between;
     background: white;
     padding: 20px 80px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
 }
 
@@ -200,7 +203,19 @@ img {
     margin-bottom: 20px;
 }
 
+@media (max-width:834px) {
+    nav {
+        position: sticky;
+        top: 0;
+    }
+}
+
 @media (max-width:768px) {
+    nav {
+        position: sticky;
+        top: 0;
+    }
+
     #navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -208,14 +223,13 @@ img {
         position: absolute;
         top: 63px;
         z-index: 1000;
-        right: -1020px;
+        display: none;
         width: 300px;
         height: 100vh;
         background: white;
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.2);
         padding: 40px 0 0 10px;
         transition: right 0.3s ease-in-out;
-
     }
 
     img {
@@ -223,7 +237,7 @@ img {
     }
 
     #navbar.active {
-        right: 0;
+        display: block;
 
     }
 

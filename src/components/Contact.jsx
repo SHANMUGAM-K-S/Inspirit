@@ -1,8 +1,12 @@
 import React from 'react'
 import './Contact.css'
-
+import { useForm, ValidationError } from '@formspree/react';
 
 const Contact = () => {
+    const [state, handleSubmit] = useForm("mdkgaakr");
+    if (state.succeeded) {
+        console.log("Contact Submitted")
+    }
     return (
         <div className='contac'>
             <div className="contact-page">
@@ -28,18 +32,38 @@ const Contact = () => {
                 <div className="cnts">
                     <h1>CONTACT INFO </h1>
 
-                    <form action="" >
-                        <input type="text" placeholder='Firstname' />
+                    <form onSubmit={handleSubmit} action="https://formspree.io/f/mdkgaakr" method='POST'>
+                        <input type="text" id='text' name='Name' placeholder='Firstname' />
+                        <ValidationError
+                            prefix="Text"
+                            field="Name"
+                            errors={state.errors}
+                        />
                         <br />
-                        <input type="email" placeholder='EMail Address' />
+                        <input type="email" id='email' name='E-mail' placeholder='EMail Address' />
+                        <ValidationError
+                            prefix="Email"
+                            field="E-mail"
+                            errors={state.errors}
+                        />
                         <br />
-                        <input type="tel" maxLength="10" placeholder='Contact Number' />
+                        <input type="tel" id='number' name='Contact-Number' maxLength="10" placeholder='Contact Number' />
+                        <ValidationError
+                            prefix="Contact Number"
+                            field="Mobile-Number"
+                            errors={state.errors}
+                        />
                         <br />
-                        <textarea placeholder='Message'></textarea>
+                        <textarea id="message"
+                            name="Message" placeholder='Message'></textarea> <ValidationError
+                            prefix="Message"
+                            field="Message"
+                            errors={state.errors}
+                        />
                         <br />
 
                         <br />
-                        <button>Submit</button>
+                        <button type="submit" disabled={state.submitting}>Submit</button>
                     </form>
                 </div>
             </div>

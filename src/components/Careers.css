@@ -117,3 +117,126 @@
     font-family: 'Poppins', sans-serif;
     background: red;
 }
+
+
+@media (max-width:834px) {
+    .seconds {
+        height: 65vh;
+        background: black;
+    }
+
+    .cnt {
+        background: white;
+        width: 500px;
+        height: 600px;
+        margin-top: 40px;
+        margin-left: 150px;
+        border-radius: 5px;
+    }
+
+    .cnt h1 {
+        font-size: 3rem;
+    }
+
+    .cnt form input {
+        width: 420px;
+        height: 22px;
+    }
+
+    .cnt form textarea {
+        width: 425px;
+    }
+
+    .cnt form button {
+        color: black;
+        background: aqua;
+        padding: 8px 70px;
+        margin-left: 120px;
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width:518px) {
+    .sec {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .cnt h1 {
+        font-size: 1.8rem;
+    }
+
+    .career h3 {
+        text-align: center;
+        font-size: 1.2rem;
+        background: linear-gradient(to left, red, blue);
+    }
+
+
+    .c1 h4 {
+        font-size: 1.4rem;
+        margin-left: -45px;
+        margin-top: 10px;
+    }
+
+    .c1 h6 {
+        font-size: 0.8rem;
+        margin-left: -20px;
+    }
+
+    .h5 h5 {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        text-align: center;
+        height: 100%;
+
+    }
+
+    .seconds {
+        width: 100%;
+        height: 45vh;
+        background: black;
+        overflow: visible;
+        padding-bottom: 10px;
+    }
+
+
+
+    .cnt form {
+        margin-left: 20px;
+
+    }
+
+    .cnt form input {
+        width: 190px;
+        height: 10px;
+    }
+
+    .cnt form textarea {
+        height: 20px;
+        width: 200px;
+    }
+
+
+
+    .seconds .cnt {
+        margin-left: 60px;
+        width: 250px;
+        height: 350px;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+    .cnt form button {
+        padding: 5px 15px;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width:380px) {
+    .seconds {
+        height: 58vh;
+    }
+}

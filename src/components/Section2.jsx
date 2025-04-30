@@ -56,7 +56,7 @@ const Section2 = () => {
 
             <div className="intro">
                 <div className="heading">
-                    <h1>Inspirit Engineering Solutions</h1>
+
                 </div>
             </div>
             <div className="texts">
@@ -77,8 +77,10 @@ const Section2 = () => {
                         We are committed to providing our clients with high-quality engineering services that meet their specific needs and requirements. Our team is dedicated to delivering innovative and cost-effective solutions to help our clients achieve their goals.
                     </p>
                 </div>
-                <div className="image-section" ref={imageRef}>
-                    <div className="in"></div>
+                <div className="image-section">
+                    <div className="in">
+                        <img src="https://wallpapers.com/images/featured/4k-programming-3hcns7bt28muj7ih.jpg" alt="image" />
+                    </div>
                 </div>
             </div>
 

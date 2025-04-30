@@ -12,8 +12,6 @@
     margin-right: 20px;
 }
 
-
-
 .text-image-mask {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 6rem;
@@ -28,14 +26,11 @@
     -webkit-text-fill-color: transparent;
     color: transparent;
     transition: transform 0.3s ease-in, opacity 0.3s ease-in;
-
 }
 
 .text-image-mask.blast {
     transform: scale(3) rotate(900deg);
-
     opacity: 0;
-    /* Disappears */
 }
 
 .texts h1::selection {
@@ -63,12 +58,10 @@
     color: white;
 }
 
-
-
 .intro {
     height: 700px;
-    /* width: 100%; */
-    background: linear-gradient(to right, rgb(92, 9, 66), rgb(225, 85, 209));
+    width: auto;
+    background-image: url(https://static.wixstatic.com/media/fbe21a_0e4539c40cf8458197f472ea08e6bfd2f000.jpg/v1/fill/w_1521,h_687,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/fbe21a_0e4539c40cf8458197f472ea08e6bfd2f000.jpg);
 }
 
 .heading {
@@ -82,22 +75,12 @@
     margin-top: 50px;
 }
 
-/* .mu .btn2 {
-    margin-top: 469px;
-    margin-left: -261px;
-    padding: 15px 99px;
-    background: transparent;
-    color: white;
-    border: none;
-} */
-
 .mu .btn2:hover {
     background: rgb(95, 3, 84);
 }
 
 .service {
     width: 100%;
-    height: 110vh;
     background: linear-gradient(to right, rgb(50, 220, 53), rgb(190, 6, 153));
     margin-bottom: -19px;
     overflow: hidden;
@@ -222,7 +205,6 @@
     margin-top: -40px;
     background: rgb(249, 245, 245);
     border-radius: 10px;
-
 }
 
 .shanmugam:active {
@@ -257,17 +239,6 @@
 }
 
 
-
-.shanmugam .in {
-    width: 500px;
-    height: 500px;
-    margin-left: 300px;
-    margin-top: 150px;
-    background-size: cover;
-    background-position: center;
-    clip-path: ellipse(43% 46% at 50% 50%);
-    background-image: url('https://img.freepik.com/free-photo/person-playing-3d-video-games-device_23-2151005751.jpg?t=st=1745561785~exp=1745565385~hmac=44133156e082d4cb3b634c4fe82b30a8ede4174468fe936cf470222d540e334b&w=1380');
-}
 
 .shanmugam .in:hover {
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
@@ -371,9 +342,15 @@
 }
 
 .shanmugam .image-section {
-    opacity: 0;
-    transform: translateX(400px);
+    /* transform: translateX(400px); */
+    margin-left: 220px;
+    margin-top: 150px;
     transition: all 1s ease-in-out;
+}
+
+.image-section img {
+    height: 400px;
+    width: 400px;
 }
 
 .text-section.in-view {
@@ -460,10 +437,99 @@
     transform: scale(1);
 }
 
-@media (max-width:768px) {
+.images {
+    padding-bottom: 30px;
+    padding-top: -20px;
+}
+
+@media (max-width:834px) {
+    .intro {
+        height: 800px;
+    }
+
     .text-image-mask {
-        font-size: 2rem;
-        margin-bottom: 65px;
+        font-size: 3rem;
+        margin-top: -30px;
+    }
+
+    .shanmugam {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shanmugam h3 {
+        font-size: 2.5rem;
+    }
+
+    .shanmugam p {
+        margin-top: 10px;
+        max-width: 800px;
+        padding: none;
+    }
+
+    .image-section img {
+        height: 500px;
+        width: 600px;
+        margin-left: -180px;
+        margin-top: -120px;
+    }
+
+    .service {
+        padding-bottom: 25px;
+        background: rgb(235, 232, 232);
+    }
+
+    .service h2 {
+        color: black;
+    }
+
+    .service .img1 {
+        margin-left: -80px;
+        height: 400px;
+    }
+
+    .service .img2 {
+        margin-left: -80px;
+        height: 400px;
+    }
+
+    .service .img1 img {
+        height: 150px;
+        width: 200px;
+        margin-left: 30px;
+    }
+
+    .service .img2 img {
+        height: 150px;
+        width: 200px;
+        margin-left: 30px;
+    }
+
+
+    .service .img1 p {
+        font-size: 12px;
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .service .img2 p {
+        font-size: 12px;
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media (max-width:488px) {
+    .intro {
+        height: 500px;
+    }
+
+    .text-image-mask {
+        font-size: 1rem;
+        margin-bottom: 50px;
+        margin-top: -35px;
     }
 
     .shanmugam {
@@ -476,6 +542,19 @@
         width: 100%;
     }
 
+    .shanmugam .image-section {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .image-section img {
+        border-radius: 50%;
+    }
+
+    .shanmugam p {
+        margin-top: -35px;
+    }
+
     .text-section h3 {
         font-size: 22px;
         text-align: center;
@@ -483,14 +562,9 @@
         flex-direction: column-reverse;
     }
 
-    .image-section .in {
-        margin-left: auto;
-        background-size: cover;
-        width: 250px;
-        height: 250px;
-        margin-top: -10px;
-        margin-left: 23px;
-        background-position: center;
+    .shanmugam {
+        padding-left: 3%;
+        padding-right: 3%;
     }
 
     .service h2 {
@@ -502,30 +576,40 @@
     .images {
         display: flex;
         flex-direction: column;
+
     }
 
     .images .img1 {
         height: 310px;
         width: 200px;
-        margin-left: 18px;
+        margin-left: 40px;
         margin-bottom: 20px;
     }
 
     .images .img2 {
         height: 310px;
         width: 200px;
-        margin-left: 18px;
+        margin-left: 40px;
         margin-bottom: 10px;
+    }
+
+    .service {
+        background: rgb(205, 203, 203);
+        padding-bottom: 20px;
     }
 
     .images .img1 img {
         height: 100px;
         width: 100px;
+        margin-left: 40px;
+        margin-top: 10px;
     }
 
     .images .img2 img {
         height: 100px;
         width: 100px;
+        margin-left: 40px;
+        margin-top: 10px;
     }
 
     .images .img1 h3 {
@@ -547,5 +631,19 @@
         width: 150px;
         overflow: scroll;
         text-align: center;
+    }
+
+    .shanmugam .in img {
+        height: 250px;
+        width: 250px;
+        margin-top: -20px;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width:380px) {
+    .images {
+
+        margin-left: -30px;
     }
 }
