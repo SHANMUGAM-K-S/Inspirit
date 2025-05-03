@@ -80,12 +80,12 @@ const Section2 = () => {
                 </div>
                 <div className="image-section">
                     <div className="in">
-                        <img src="https://wallpapers.com/images/featured/4k-programming-3hcns7bt28muj7ih.jpg" alt="image" />
+                        <img src="https://static.wixstatic.com/media/fbe21a_c2ae7ce41f9e47519e6fdfb7e732fb43~mv2.jpeg/v1/crop/x_137,y_0,w_2698,h_3584/fill/w_808,h_1074,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/vecteezy_robotic-arms-in-a-car-plant-at-line-factory-generative-ai_30603394.jpeg" alt="image" />
                     </div>
                 </div>
             </div>
 
-            <div className="service">
+            {/* <div className="service">
 
                 <div className="">
                     <h2>WE Provide :</h2>
@@ -102,8 +102,33 @@ const Section2 = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sunt maiores, ducimus asperiores reiciendis nulla quasi impedit consequatur incidunt eaque suscipit aliquam sequi exercitationem! Accusamus amet commodi velit incidunt explicabo?</p>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            <div className="our-team">
+                <div className="about-team">
+                    <div className="team">
+                        <h1>Our Team</h1>
+                        <p>Our team is a group of passionate professionals dedicated to delivering innovative and reliable engineering solutions.</p>
+                    </div>
+                    <div className="experts">
+                        <div className="expertise">
+                            <img src="https://static.wixstatic.com/media/fbe21a_87df13c5cebe497b86dc816b74a73270~mv2.webp/v1/fill/w_628,h_359,al_c,lg_1,q_80,enc_avif,quality_auto/fbe21a_87df13c5cebe497b86dc816b74a73270~mv2.webp" alt="" />
+                            <h3>Our Team & Expertise</h3>
+                            <p className="para1">We have a team of highly skilled and experienced engineers who are passionate about delivering exceptional services to our clients. Our team is committed to continuing education and staying up-to-date with the latest trends and technologies in the industry.
 
+                                Our team has the expertise to take your project from concept to completion.</p>
+                        </div>
+                        <hr />
+                        <div className="expertises">
+                            <img src="https://static.wixstatic.com/media/fbe21a_11e36b9b9b4b4286b3fccb47bc1acc42~mv2.webp/v1/fill/w_614,h_360,al_c,lg_1,q_80,enc_avif,quality_auto/fbe21a_11e36b9b9b4b4286b3fccb47bc1acc42~mv2.webp" alt="" />
+                            <h3>Vision & Mission</h3>
+                            <p className="para2"> <strong>Vision</strong> – To emerge globally as an Inspired Engineering company, providing world-class Mechanical Engineering and Technical solutions.
+                                <br /><br />
+                                <strong>   Mission</strong> – To have long-term relationships with customers, and value them using Engineering solutions with the latest Technologies ensuring Quality, Timely Delivery, and Customer Satisfaction.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
         </div>
     );

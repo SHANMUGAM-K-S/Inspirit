@@ -36,6 +36,7 @@ import AutomotiveServices from './components/AutomotiveServices'
 import About from './components/About'
 import ScrollToTop from './components/ScrollToTop'
 
+import 'react-phone-number-input/style.css';
 
 
 

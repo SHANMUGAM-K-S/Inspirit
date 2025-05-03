@@ -1,82 +1,3 @@
-// import React, { useState, useEffect } from 'react';
-// import { useNavigate, useLocation } from 'react-router-dom';
-// import './Nav.css';
-
-// const Navbar = () => {
-//     const [scrolled, setScrolled] = useState(false);
-//     // const [menuOpen, setMenuOpen] = useState(false);
-//     const navigate = useNavigate();
-//     const location = useLocation();
-
-//     function careers() {
-//         navigate('/career');
-//     }
-//     function contact() {
-//         navigate('/contact')
-//     }
-//     function about() {
-//         navigate('/about')
-//     }
-//     function service() {
-//         navigate('/service')
-//     }
-//     useEffect(() => {
-//         const handleScroll = () => {
-//             setScrolled(window.scrollY > 0);
-//         };
-
-//         window.addEventListener('scroll', handleScroll);
-//         return () => window.removeEventListener('scroll', handleScroll);
-//     }, []);
-
-//     // const toggleMenu = () => {
-//     //     setMenuOpen(!menuOpen);
-//     // };
-
-//     return (
-//         <div className='solution'>
-//             <div className={scrolled ? 'container-nav scrolled' : 'container-nav'}>
-//                 <div>
-//                     <img src="https://static.wixstatic.com/media/fbe21a_6f3f12bd11ae4ba19718ab8eed376993~mv2.webp/v1/fill/w_248,h_94,al_c,lg_1,q_80,enc_avif,quality_auto/fbe21a_6f3f12bd11ae4ba19718ab8eed376993~mv2.webp" alt="Logo" />
-//                 </div>
-//                 {/* <button className="hamburger" onClick={toggleMenu}>
-//                     <div className="line"></div>
-//                     <div className="line"></div>
-//                     <div className="line"></div>
-//                 </button> */}
-//                 <div className={`containersss `}>
-//                     <div className="lists">
-//                         <ul>
-//                             {location.pathname !== "/" && <li><a href="/">Home</a></li>}
-//                             {location.pathname !== "/service" && <li><a href="#" onClick={service}>Services</a></li>}
-//                             {location.pathname !== "/career" && <li><a href="#" onClick={careers}>Careers</a></li>}
-//                             {location.pathname !== "/about" && <li><a href="#" onClick={about}>About</a></li>}
-//                             {location.pathname !== "/contact" && (<li><a href="#" onClick={contact}>Contact</a></li>)}
-//                         </ul>
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// };
-
-// function home() {
-//     navigate('/')
-// }
-// function service() {
-//     navigate('/service')
-// }
-// function career() {
-//     navigate('/career')
-// }
-// // function about() {
-// //     navigate('/about')
-// // }
-// function contact() {
-//     navigate('/contact')
-// }
-// export default Navbar;
-
 
 import React, { useState, useEffect, useRef } from "react";
 import "./Nav.css"; import { useLocation } from "react-router-dom";
@@ -93,7 +14,14 @@ const Navbar = () => {
         setClicked(!clicked);
     };
 
-
+    const handleDownload = () => {
+        const link = document.createElement("a");
+        link.href = "/Django.pdf";
+        link.download = "Catalogue.pdf"; // Sets the downloaded file name
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
     useEffect(() => {
         const handleOutsideClick = (event) => {
             if (navRef.current && !navRef.current.contains(event.target)) {
@@ -108,7 +36,9 @@ const Navbar = () => {
     const handleNavigation = (path) => {
         navigate(path);
         setClicked(false);
-        window.scrollTo(0, 0);
+        setTimeout(() => {
+            document.documentElement.scrollTop = 0;
+        }, 100);
     };
 
     const styles = {
@@ -155,9 +85,9 @@ const Navbar = () => {
 
                         </ul>
                     </li>
-
+                    <li><a href="#" onClick={handleDownload} download >Catalogues</a></li>
                     <li><a onClick={() => handleNavigation("/career")}>Careers</a></li>
-                    {/* <li><a href="/about" onClick={() => setClicked(false)}>About</a></li> */}
+
                     <li><a onClick={() => handleNavigation("/contact")}>Contact</a></li>
                 </ul>
             </div>

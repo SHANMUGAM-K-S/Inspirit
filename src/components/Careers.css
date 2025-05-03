@@ -17,29 +17,42 @@
     display: flex;
 }
 
-/* 
-.second {
-    width: 100%;
-    height: 100vh;
-    background-image: url(./assets/add3.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: hidden;
-    margin-bottom: 5px;
-    border-bottom-left-radius: 120px;
-    display: flex;
-} */
+
 
 .seconds {
     width: 100%;
     height: 90vh;
-    background-image: url(./assets/sendmessage.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     overflow: hidden;
+    background-image: url(./assets/bg-career.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
+    justify-content: space-around;
+}
+
+.text1 h3 {
+    font-family: Poppins, sans-serif;
+    font-size: 42px;
+}
+
+.text1 p {
+    font-family: Poppins, sans-serif;
+    width: 340px;
+    font-size: 20px;
+}
+
+.hr-contact {
+    display: flex;
+    font-family: Poppins, sans-serif;
+}
+
+.hr-contact a {
+    text-decoration: none;
+    color: rgb(83, 81, 81);
+    font-weight: 600;
+    padding-top: 21px;
+    padding-left: 10px;
 }
 
 .c1 {
@@ -69,7 +82,6 @@
     width: 400px;
     height: 520px;
     margin-top: 40px;
-    margin-left: 900px;
     border-radius: 5px;
 }
 
@@ -106,7 +118,15 @@
 }
 
 .cnt form .inp {
-    border: 1px dashed black;
+    border: none;
+}
+
+.drag-drop {
+    width: 340px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .cnt form button {
@@ -119,40 +139,143 @@
 }
 
 
-@media (max-width:834px) {
+@media (max-width:1300px) {
     .seconds {
-        height: 65vh;
-        background: black;
+        height: auto;
+        justify-content: space-evenly;
     }
 
     .cnt {
         background: white;
-        width: 500px;
-        height: 600px;
+        width: 420px;
+        height: 550px;
+        margin-bottom: 10px;
         margin-top: 40px;
-        margin-left: 150px;
         border-radius: 5px;
     }
 
     .cnt h1 {
-        font-size: 3rem;
+        font-size: 2.2rem;
     }
 
     .cnt form input {
-        width: 420px;
+        width: 350px;
         height: 22px;
     }
 
     .cnt form textarea {
-        width: 425px;
+        width: 355px;
     }
 
     .cnt form button {
-        color: black;
+        color: white;
         background: aqua;
+        padding: 8px 50px;
+        margin-left: 100px;
+    }
+
+    .drag-drop {
+        width: 360px;
+        height: 30px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+}
+
+@media (max-width:1030px) {
+    .seconds {
+        height: auto;
+
+    }
+
+    .cnt {
+        background: white;
+        width: 300px;
+        height: 400px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    .cnt h1 {
+        font-size: 1.4rem;
+    }
+
+    .cnt form input {
+        width: 210px;
+        height: 12px;
+    }
+
+    .cnt form textarea {
+        width: 215px;
+        height: 60px;
+    }
+
+    .cnt form button {
+        color: white;
+        background: rgb(8, 223, 19);
+        padding: 5px 40px;
+        margin-left: 50px;
+    }
+
+    .drag-drop {
+        width: 220px;
+        height: 30px;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:834px) {
+    .seconds {
+        height: auto;
+        justify-content: space-evenly;
+    }
+
+    .text1 h3 {
+        font-size: 1.8rem;
+    }
+
+    .text1 p {
+        font-size: 18px;
+        width: 250px;
+    }
+
+    .cnt {
+        background: white;
+        width: 350px;
+        height: 450px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    .cnt h1 {
+        font-size: 1.6rem;
+    }
+
+    .cnt form input {
+        width: 280px;
+        height: 17px;
+    }
+
+    .cnt form textarea {
+        width: 285px;
+    }
+
+    .cnt form button {
+        color: white;
+        background: rgb(122, 6, 218);
         padding: 8px 70px;
-        margin-left: 120px;
-        margin-top: 20px;
+        margin-left: 60px;
+
+    }
+
+    .drag-drop {
+        width: 290px;
+        height: 30px;
+        text-align: center;
+        cursor: pointer;
     }
 }
 
@@ -195,48 +318,162 @@
     }
 
     .seconds {
-        width: 100%;
-        height: 45vh;
-        background: black;
+        height: auto;
+        flex-direction: column;
         overflow: visible;
+        justify-content: space-evenly;
         padding-bottom: 10px;
     }
 
 
 
-    .cnt form {
-        margin-left: 20px;
-
-    }
+    /* .cnt form {
+        height: 200px;
+        width: 250px;
+    } */
 
     .cnt form input {
-        width: 190px;
-        height: 10px;
+        width: 180px;
+        height: 8px;
     }
 
     .cnt form textarea {
-        height: 20px;
-        width: 200px;
+        height: 25px;
+        width: 185px;
     }
 
 
 
     .seconds .cnt {
-        margin-left: 60px;
+        margin-left: 90px;
         width: 250px;
         height: 350px;
         margin-top: 10px;
-        margin-bottom: 25px;
+
     }
 
     .cnt form button {
-        padding: 5px 15px;
-        margin-left: 50px;
+        padding: 4px 35px;
+        margin-left: 35px;
+        margin-top: -20px;
+
+    }
+
+    .drag-drop {
+        width: 190px;
+        height: 25px;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .text1 {
+        margin-left: 100px;
+    }
+
+    .text1 h3 {
+        font-size: 1.2rem;
+        padding-left: 20px;
+    }
+
+    .text1 p {
+        font-size: 0.8rem;
+        padding-left: 5px;
+    }
+
+    .hr-contact {
+        margin-top: 20px;
+        margin-left: -30px;
+    }
+
+    .hr-contact h4 {
+        font-size: 0.8rem;
+    }
+
+    .hr-contact a {
+        margin-top: -4px;
+        font-size: 0.8rem;
     }
 }
 
 @media (max-width:380px) {
     .seconds {
-        height: 58vh;
+        height: auto;
+        flex-direction: column;
+        overflow: visible;
+        justify-content: space-evenly;
+        padding-bottom: 10px;
+    }
+
+
+
+    /* .cnt form {
+        height: 200px;
+        width: 250px;
+    } */
+
+    .cnt form input {
+        width: 180px;
+        height: 8px;
+        border: 1px solid black;
+    }
+
+    .cnt form textarea {
+        height: 25px;
+        border: 1px solid black;
+        width: 185px;
+    }
+
+
+
+    .seconds .cnt {
+        margin-left: 70px;
+        width: 250px;
+        height: 350px;
+        margin-top: 10px;
+
+    }
+
+    .cnt form button {
+        padding: 4px 35px;
+        margin-left: 35px;
+        margin-top: -20px;
+
+    }
+
+    .drag-drop {
+        width: 190px;
+        height: 25px;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .text1 {
+        margin-left: 80px;
+    }
+
+    .text1 h3 {
+        font-size: 1.2rem;
+        padding-left: 20px;
+    }
+
+    .text1 p {
+        font-size: 0.8rem;
+        padding-left: 5px;
+    }
+
+    .hr-contact {
+        margin-top: 20px;
+        margin-left: -30px;
+    }
+
+    .hr-contact h4 {
+        font-size: 0.8rem;
+    }
+
+    .hr-contact a {
+        margin-top: -4px;
+        font-size: 0.8rem;
     }
 }

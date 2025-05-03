@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Contact.css'
 import { useForm, ValidationError } from '@formspree/react';
+import PhoneInput from 'react-phone-number-input';
+import 'react-phone-number-input/style.css';
 
 const Contact = () => {
-    const [state, handleSubmit] = useForm("mdkgaakr");
+    const [state, handleSubmit] = useForm("mdkgaakr"); const [value, setValue] = useState('');
+    // const [phone, setPhone] = useState('');
     if (state.succeeded) {
         console.log("Contact Submitted")
     }
@@ -15,19 +18,7 @@ const Contact = () => {
                 </div>
 
             </div>
-            {/* <div className="web-dev">
-                <div className="img-side">
-                    <span>SHANMUGAM</span>
-                </div>
-                <div className="text-side">
-                    <h2>WEB DEVELOPMENT</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, distinctio nostrum cumque quas minus, quo voluptates iusto fuga aperiam asperiores odit laboriosam sed ipsum impedit quia minima eum soluta cum!
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae amet itaque quo eveniet! Eligendi iure ut veritatis architecto delectus, iusto atque, assumenda voluptas ratione, minus minima vero similique nisi officia?
-                    </p>
-                    <button>Explore More →</button>
-                </div>
-            </div>
-            <div className="mech-des"></div> */}
+
             <div className="contacts">
                 <div className="cnts">
                     <h1>CONTACT INFO </h1>
@@ -47,7 +38,13 @@ const Contact = () => {
                             errors={state.errors}
                         />
                         <br />
-                        <input type="tel" id='number' name='Contact-Number' maxLength="10" placeholder='Contact Number' />
+                        <PhoneInput className='phone'
+                            placeholder="Enter phone number"
+                            value={value}
+                            onChange={setValue}
+                            defaultCountry="IN"
+                        />
+
                         <ValidationError
                             prefix="Contact Number"
                             field="Mobile-Number"

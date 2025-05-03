@@ -17,7 +17,7 @@ function AutomotiveServices() {
                 <section id="planning">
                     <img src={i1} alt="Planning" />
                     <h1>Planning</h1>
-                    <p>Process Planning Layout Design Cycle Time Process Documents Weld Gun Study Ergonomic Study</p>
+                    <p>Process Planning <br /> Layout Design <br /> Cycle Time <br /> Process Documents <br /> Weld Gun Study <br /> Ergonomic Study</p>
                 </section>
 
                 <section id="layouts">
@@ -29,19 +29,19 @@ function AutomotiveServices() {
                 <section id="design-drafting">
                     <img src={i3} alt="Design and Drafting" />
                     <h1>Design and Drafting</h1>
-                    <p>Geo & Re-Spot Fixtures Hemming Fixtures Checking Fixtures Arc/Lase Welding Fixtures Material Handling / End Effectors / Combo Grippers Conveyor & Pallet Miscellaneous Fixtures (Pedestal, Glue Stand, Passtable etc...)</p>
+                    <p>Geo & Re-Spot Fixtures <br /> Hemming Fixtures <br /> Checking Fixtures <br /> Arc/Lase Welding Fixtures <br /> Material Handling / End Effectors / <br /> Combo Grippers <br /> Conveyor & Pallet <br /> Miscellaneous Fixtures (Pedestal, Glue Stand, Passtable etc...)</p>
                 </section>
 
                 <section id="robotic-simulation">
                     <img src={i4} alt="Robotic Simulation" />
                     <h1>Robotic Simulation</h1>
-                    <p>Cell Building Weld Points & product data importing Weld Gun Selections Robotic Reach Study Tool Validation Kinematics SOP (Sequence Of Operation) OLP (Off-Line Programming)</p>
+                    <p>Cell Building <br /> Weld Points & product data importing <br /> Weld Gun Selections <br /> Robotic Reach Study <br /> Tool Validation <br /> Kinematics <br /> SOP (Sequence Of Operation) <br /> OLP (Off-Line Programming)</p>
                 </section>
 
                 <section id="documents">
                     <img src={i5} alt="Documents" />
                     <h1>Documents</h1>
-                    <p>Validation (Clamp, Gripper, Turntable etc...) Cycle Time & Spot Plan Creation Pneumatic Drawings Sequence Sheet PLP Plan & SHIM Plan Panel Flor / Joining Process Ergo Documents Poka-Yoke Long Lead / BOP</p>
+                    <p>Validation (Clamp, Gripper, Turntable etc...) <br /> Cycle Time & Spot Plan Creation <br /> Pneumatic Drawings <br /> Sequence Sheet <br /> PLP Plan & SHIM Plan <br /> Panel Flor / Joining Process <br /> Ergo Documents <br /> Poka-Yoke <br /> Long Lead / BOP</p>
                 </section>
             </div>
         </>

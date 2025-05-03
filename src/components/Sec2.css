@@ -28,10 +28,10 @@
     transition: transform 0.3s ease-in, opacity 0.3s ease-in;
 }
 
-.text-image-mask.blast {
+/* .text-image-mask.blast {
     transform: scale(3) rotate(900deg);
     opacity: 0;
-}
+} */
 
 .texts h1::selection {
     background: rgb(233, 88, 5);
@@ -238,103 +238,6 @@
     text-align: justify;
 }
 
-
-
-.shanmugam .in:hover {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-    background-image: url('https://cdn.dribbble.com/userupload/20571483/file/original-2f612b1703c66a9ccc18c5d7e6dfdaa4.gif');
-}
-
-.shanmugam .in:active {
-    clip-path: polygon(40% 8%, 41% 35%, 100% 27%, 100% 70%, 42% 62%, 40% 100%, 0% 50%);
-    background-image: url('https://static.wixstatic.com/media/b313a9_89ebec0c5f384c65a9551f0c1ec18ca9~mv2.gif');
-}
-
-
-.engineer {
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 5%;
-    display: flex;
-    margin-top: 20px;
-    justify-content: space-between;
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 25px;
-    background: rgb(250, 249, 249);
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-    border-top-right-radius: 150px;
-    border-bottom-left-radius: 150px;
-}
-
-.engineer .image-slider {
-    height: 260px;
-    border: 5px solid rgb(25, 11, 120);
-    width: 450px;
-    background-size: cover;
-    animation: changeImages 10s infinite;
-}
-
-.engineer .image-slider1 {
-    height: 260px;
-    border: 5px solid rgb(185, 0, 0);
-    width: 450px;
-    background-size: cover;
-    animation: changeImage 10s infinite;
-}
-
-@keyframes changeImage {
-    0% {
-        background-image: url('https://i.pinimg.com/originals/18/a4/94/18a4949fc9c8067172d3b96e302e7097.gif');
-    }
-
-    25% {
-        background-image: url('https://i.pinimg.com/originals/18/a4/94/18a4949fc9c8067172d3b96e302e7097.gif');
-    }
-
-    50% {
-        background-image: url('https://38.media.tumblr.com/93f9c5f7b046b0aa253e235373a65cc1/tumblr_n8dd23VJgZ1sltdxto1_500.gif');
-    }
-
-    75% {
-        background-image: url('https://i.gifer.com/9uZi.gif');
-    }
-
-    100% {
-        background-image: url('https://i.gifer.com/GLZS.gif');
-    }
-}
-
-
-@keyframes changeImages {
-    0% {
-        background-image: url('https://i.pinimg.com/originals/06/60/ef/0660efe82fa3da42ed56eef013171835.gif');
-    }
-
-    25% {
-        background-image: url('https://i.pinimg.com/originals/f1/e7/34/f1e734f9cade86fe737a9aa404ad5677.gif');
-    }
-
-    50% {
-        background-image: url('https://media0.giphy.com/media/lP8xu5t2DLGG045H8F/giphy.gif?cid=6c09b952hufxcxl9lr0mcjbglllx8cizlrfuudrlxvrupr04&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s');
-    }
-
-    75% {
-        background-image: url('https://static.wixstatic.com/media/b313a9_89ebec0c5f384c65a9551f0c1ec18ca9~mv2.gif');
-    }
-
-    100% {
-        background-image: url('https://static.wixstatic.com/media/b313a9_89ebec0c5f384c65a9551f0c1ec18ca9~mv2.gif');
-    }
-}
-
-.engineer img {
-    height: 260px;
-    border: 5px solid rgb(25, 11, 120);
-    width: 450px;
-}
-
-
 .shanmugam .text-section {
     opacity: 0;
     transform: translateX(-400px);
@@ -349,8 +252,12 @@
 }
 
 .image-section img {
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 450px;
+    border-top-left-radius: 60%;
+    border-bottom-left-radius: 60%;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
 }
 
 .text-section.in-view {
@@ -363,57 +270,6 @@
     transform: translateX(0);
 }
 
-.engineer-top {
-    opacity: 0;
-    margin-right: 155px;
-    transform: translateY(50px);
-    transition: all 1s ease-in-out;
-}
-
-.engineer-top h2 {
-    font-size: 28px;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.engineer-top p {
-
-    max-width: 500px;
-    font-size: 15px;
-    color: rgb(63, 59, 59);
-    font-family: 'Poppins', sans-serif;
-    text-align: justify;
-}
-
-.engineer-bottom {
-    opacity: 0;
-    transform: translateY(200px);
-    transition: all 1s ease-in-out;
-}
-
-.engineer-bottom h2 {
-    font-size: 28px;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.engineer-bottom p {
-    max-width: 500px;
-    font-size: 15px;
-    color: rgb(63, 59, 59);
-    font-family: 'Poppins', sans-serif;
-    text-align: justify;
-}
-
-.engineer-top.in-view {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.engineer-bottom.in-view {
-    opacity: 1;
-    transform: translateY(0);
-}
 
 .image-box {
     opacity: 0;
@@ -458,14 +314,237 @@
     height: 100vh;
 }
 
-@media (max-width:834px) {
+/* team experts page */
+.our-team {
+    border: 3px solid rgb(17, 6, 135);
+    margin: 20px;
+    height: 95vh;
+}
+
+.about-team {
+    display: flex;
+    flex-direction: column;
+}
+
+.team h1 {
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5px;
+}
+
+.team p {
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*  */
+.experts {
+    display: flex;
+    flex-direction: row;
+}
+
+/* left side image */
+.expertise {
+    margin-top: 25px;
+    text-align: center;
+    margin-left: 200px;
+}
+
+.expertise img {
+    border: 5px solid darkblue;
+    height: 220px;
+    width: 370px;
+    margin-bottom: -15px;
+}
+
+.expertise h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+}
+
+.expertise p {
+    width: 450px;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* right side image */
+
+.expertises {
+    margin-top: 25px;
+    text-align: center;
+    margin-right: 200px;
+}
+
+.expertises p {
+    width: 450px;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+.expertises h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+}
+
+.expertises img {
+    border: 5px solid darkblue;
+    height: 220px;
+    width: 370px;
+    margin-bottom: -15px;
+}
+
+@media (max-width:1300px) {
     .intro {
-        height: 800px;
+        height: 680px;
     }
 
     .text-image-mask {
-        font-size: 3rem;
-        margin-top: -30px;
+        font-size: 4rem;
+    }
+
+    .shanmugam h3 {
+        margin-bottom: 5px;
+        margin-left: 15px;
+    }
+
+    .shanmugam p {
+        width: 500px;
+        font-size: 15px;
+    }
+
+    .image-section img {
+        height: 400px;
+        width: 400px;
+        margin-left: -50px;
+    }
+
+    /* our team section */
+    .our-team {
+        height: auto;
+    }
+
+    .team h1 {
+        font-size: 4rem;
+        margin-top: 5px;
+        color: rgb(1, 1, 63);
+    }
+
+    .team p {
+        font-size: 16px;
+        margin-top: -15px;
+    }
+
+    .expertise {
+        margin-left: 80px;
+    }
+
+    .expertises {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width:1030px) {
+
+    .intro {
+        height: 550px;
+    }
+
+    .text-image-mask {
+        font-size: 2.7rem;
+        margin-top: -20px;
+    }
+
+    .shanmugam {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        padding: 0 5%;
+    }
+
+    .shanmugam h3 {
+        font-size: 2.2rem;
+    }
+
+    .shanmugam p {
+        width: 400px;
+        max-width: 800px;
+        padding: 15px;
+    }
+
+    .image-section img {
+        height: 400px;
+        width: 380px;
+        margin-left: -120px;
+        margin-top: -20px;
+    }
+
+    /*  */
+    /* our team */
+    .our-team {
+        height: auto;
+    }
+
+    .team h1 {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: -15px;
+    }
+
+    .team p {
+        padding: 5px 3%;
+        font-size: 17px;
+    }
+
+    .experts {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .expertise img {
+        height: 150px;
+        width: 230px;
+    }
+
+    .expertises img {
+        height: 150px;
+        width: 230px;
+    }
+
+    .expertise h3 {
+        font-size: 18px;
+    }
+
+    .expertise p {
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 400px;
+        padding: 0 2%;
+    }
+
+    .expertises p {
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 400px;
+
+    }
+
+    .expertises h3 {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width:830px) {
+    .intro {
+        height: 600px;
+    }
+
+    .text-image-mask {
+        font-size: 2.8rem;
     }
 
     .shanmugam {
@@ -474,67 +553,85 @@
     }
 
     .shanmugam h3 {
-        font-size: 2.5rem;
+        text-align: center;
+        font-size: 2.2rem;
     }
 
     .shanmugam p {
-
+        width: auto;
         max-width: 800px;
         padding: 15px;
-        font-family: Arial, Helvetica, sans-serif;
     }
 
     .image-section img {
         height: 500px;
-        width: 600px;
-        margin-left: -180px;
+        width: 520px;
+        margin-left: -120px;
         margin-top: -120px;
     }
 
-    .service {
-        padding-bottom: 25px;
-        background: rgb(235, 232, 232);
+    /*  */
+    /* our team */
+    .our-team {
+        height: auto;
     }
 
-    .service h2 {
-        color: black;
-    }
-
-    .service .img1 {
-        margin-left: -80px;
-        height: 400px;
-    }
-
-    .service .img2 {
-        margin-left: -80px;
-        height: 400px;
-    }
-
-    .service .img1 img {
-        height: 150px;
-        width: 200px;
-        margin-left: 30px;
-    }
-
-    .service .img2 img {
-        height: 150px;
-        width: 200px;
-        margin-left: 30px;
-    }
-
-
-    .service .img1 p {
-        font-size: 12px;
+    .team h1 {
         text-align: center;
-        padding-left: 5px;
-        padding-right: 5px;
+        font-size: 38px;
     }
 
-    .service .img2 p {
-        font-size: 12px;
-        text-align: center;
-        padding-left: 5px;
-        padding-right: 5px;
+    .team p {
+        padding: 0 3%;
+        font-size: 17px;
+    }
+
+    .experts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .expertise img {
+        height: 230px;
+        margin-right: 70px;
+        width: 420px;
+        margin-top: -20px;
+    }
+
+    .expertises img {
+        height: 230px;
+        margin-left: 70px;
+        margin-top: -30px;
+        width: 420px;
+    }
+
+    .expertise h3 {
+        font-size: 24px;
+        margin-left: -100px;
+    }
+
+    .expertise p {
+        font-size: 17px;
+        margin-right: 50px;
+        margin-top: -15px;
+        padding: 0 5%;
+        font-family: Arial, Helvetica, sans-serif;
+        width: auto;
+    }
+
+    .expertises p {
+        font-size: 17px;
+        margin-left: 50px;
+        padding: 0 5%;
+        margin-top: -15px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: auto;
+
+    }
+
+    .expertises h3 {
+        font-size: 24px;
+        margin-left: 80px;
     }
 }
 
@@ -544,9 +641,7 @@
     }
 
     .text-image-mask {
-        font-size: 1rem;
-        margin-bottom: 50px;
-        margin-top: -35px;
+        font-size: 1.5rem;
     }
 
     .shanmugam {
@@ -569,12 +664,11 @@
     }
 
     .shanmugam p {
-        margin-top: -35px;
-
+        width: auto;
     }
 
     .text-section h3 {
-        font-size: 22px;
+        font-size: 24px;
         text-align: center;
         display: flex;
         flex-direction: column-reverse;
@@ -585,71 +679,6 @@
         padding-right: 3%;
     }
 
-    .service h2 {
-        font-size: 25px;
-        margin-left: -8px;
-        text-align: start;
-    }
-
-    .images {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .images .img1 {
-        height: 310px;
-        width: 200px;
-        margin-left: 40px;
-        margin-bottom: 20px;
-    }
-
-    .images .img2 {
-        height: 310px;
-        width: 200px;
-        margin-left: 40px;
-        margin-bottom: 10px;
-    }
-
-    .service {
-        background: rgb(205, 203, 203);
-        padding-bottom: 20px;
-    }
-
-    .images .img1 img {
-        height: 100px;
-        width: 100px;
-        margin-left: 40px;
-        margin-top: 10px;
-    }
-
-    .images .img2 img {
-        height: 100px;
-        width: 100px;
-        margin-left: 40px;
-        margin-top: 10px;
-    }
-
-    .images .img1 h3 {
-        font-size: 14px
-    }
-
-    .images .img2 h3 {
-        font-size: 14px
-    }
-
-    .images .img1 p {
-        font-size: 12px;
-        width: 150px;
-        text-align: center;
-    }
-
-    .images .img2 p {
-        font-size: 12px;
-        width: 150px;
-        overflow: scroll;
-        text-align: center;
-    }
 
     .shanmugam .in img {
         height: 250px;
@@ -657,11 +686,132 @@
         margin-top: -20px;
         margin-left: 50px;
     }
+
+    /* team experts */
+    .our-team {
+        height: auto;
+    }
+
+    .team h1 {
+        text-align: center;
+        font-size: 28px;
+        padding-bottom: 10px;
+    }
+
+    .team p {
+        padding: 0 3%;
+        font-size: 10px;
+    }
+
+    .experts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .expertise img {
+        height: 160px;
+        margin-left: -30px;
+        width: 250px;
+    }
+
+    .expertises img {
+        height: 160px;
+        margin-left: 50px;
+        width: 250px;
+    }
+
+    .expertise h3 {
+        font-size: 20px;
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .expertise p {
+        font-size: 10px;
+        margin-left: -40px;
+        text-align: justify;
+        padding: 0 2%;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 280px;
+    }
+
+    .expertises p {
+        font-size: 10px;
+        margin-left: 45px;
+        padding: 0 2%;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 280px;
+
+    }
+
+    .expertises h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
 }
 
 @media (max-width:380px) {
-    .images {
+    .text-image-mask {
+        font-size: 1.4rem;
+    }
 
-        margin-left: -30px;
+    /* our team */
+    .our-team {
+        height: auto;
+    }
+
+    .team h1 {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .team p {
+        padding: 0 2%;
+        font-size: 9px;
+    }
+
+    .experts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .expertise img {
+        height: 110px;
+        margin-left: -20px;
+        width: 200px;
+    }
+
+    .expertises img {
+        height: 110px;
+        margin-left: 60px;
+        width: 200px;
+    }
+
+    .expertise h3 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .expertise p {
+        font-size: 9px;
+        margin-left: -20px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 200px;
+    }
+
+    .expertises p {
+        font-size: 9px;
+        margin-left: 60px;
+        margin-top: -15px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 200px;
+
+    }
+
+    .expertises h3 {
+        font-size: 15px;
+        text-align: center;
+        margin-left: 50px;
     }
 }

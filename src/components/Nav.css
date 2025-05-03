@@ -225,7 +225,7 @@ img {
     top: 100%;
     left: 10px;
     opacity: 0;
-    height: 250px;
+    height: 200px;
     visibility: hidden;
     transform: translateY(-10px);
     display: flex;
@@ -241,8 +241,8 @@ img {
 
 .dropdown-menus {
     left: 10px;
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    display: none;
     transform: translateY(-10px);
     display: flex;
     flex-direction: column;
@@ -258,8 +258,7 @@ img {
 
 .softwares {
     left: 10px;
-    opacity: 0;
-    visibility: hidden;
+    display: none;
     transform: translateY(-10px);
     display: flex;
     flex-direction: column;
@@ -273,7 +272,7 @@ img {
     list-style: none;
 }
 
-.softwares li {
+.softwares li a {
     padding: 10px;
 }
 
@@ -302,17 +301,17 @@ img {
     transform: translateY(0);
 }
 
-.dropdowns:hover .dropdown-menus {
+.dropdowns .dropdown-menus {
     display: flex;
     opacity: 1;
-    visibility: visible;
+    display: block;
     transform: translateY(0);
 }
 
-.software:hover .softwares {
+.software .softwares {
     display: flex;
     opacity: 1;
-    visibility: visible;
+    display: block;
     transform: translateY(0);
 }
 
@@ -323,13 +322,20 @@ img {
     nav {
         position: sticky;
         top: 0;
-        padding-left: 30px;
         padding-bottom: 2px;
     }
 
     nav img {
         height: 50px;
         width: 110px;
+    }
+
+    #navbar {
+        margin-left: 35px;
+    }
+
+    #navbar li a {
+        font-size: 1rem;
     }
 
 }

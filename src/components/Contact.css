@@ -101,6 +101,18 @@
 
 }
 
+.phone {
+    width: 290px;
+    vertical-align: middle;
+}
+
+.react-phone-number-input__input {
+    flex: 1;
+    padding-left: 10px;
+    height: 40px;
+    font-size: 16px;
+}
+
 .cnts h1 {
     color: rgb(5, 5, 93);
     text-align: center;
@@ -130,6 +142,81 @@
     font-family: 'Poppins', sans-serif;
     background: rgb(17, 17, 236);
     color: white;
+}
+
+@media (max-width:1200px) {
+    .contac {
+        background: white;
+    }
+
+    .contact-page .contact-us h1 {
+        color: black;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 64px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .contacts {
+        background-image: none;
+    }
+
+    .contacts .cnts {
+        margin-top: 40px;
+        margin-left: 230px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .cnts {
+        background: rgb(228, 228, 228);
+        width: 600px;
+        height: 450px;
+        margin-top: 40px;
+        margin-left: 900px;
+        border-radius: 5px;
+    }
+
+
+    .cnts form input {
+        width: 510px;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(57, 56, 56);
+        padding: 8px;
+        margin-bottom: 15px;
+        border: none;
+
+    }
+
+    .phone {
+        width: 525px;
+        vertical-align: middle;
+    }
+
+    .react-phone-number-input__input {
+        flex: 1;
+        padding-left: 10px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+
+    .cnts form textarea {
+        height: 120px;
+        font-family: 'Poppins', sans-serif;
+        width: 520px;
+        border: none;
+    }
+
+    .cnts form button {
+        margin-left: 100px;
+        padding: 5px 135px;
+        border: none;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+        background: rgb(230, 95, 12);
+        color: white;
+    }
 }
 
 @media (max-width:834px) {
@@ -203,7 +290,7 @@
 
     .contacts {
         background-image: none;
-        margin-bottom: -80px;
+        margin-bottom: -250px;
         margin-left: 30px;
     }
 
@@ -256,7 +343,10 @@
 
 
 @media (max-width:405px) {
+
     .contacts {
+        background-image: none;
+        margin-bottom: -80px;
         margin-left: 10px;
     }
 }

@@ -100,7 +100,7 @@
 // }
 
 // export default Footer
-import { useForm, ValidationError } from '@formspree/react';
+import { ValidationError } from '@formspree/react';
 
 import React, { useEffect, useRef } from "react";
 import './Footer.css'
@@ -108,7 +108,7 @@ import { useNavigate } from "react-router-dom";
 const Footer = () => {
     const footerRef = useRef(null);
     const navigate = useNavigate()
-    const [state, handleSubmit] = useForm("mdkgaakr");
+
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -137,9 +137,7 @@ const Footer = () => {
         };
     }, []);
 
-    if (state.succeeded) {
-        console.log("Submitted")
-    }
+
 
     function home() {
         navigate('/')
@@ -160,44 +158,32 @@ const Footer = () => {
         <div className='foot'>
             <div className="footer" ref={footerRef}>
 
-                <div className="f1">
-                    <h3>@ INSPIRIT ENGINEERING SOLUTIONS</h3>
-                    {/* <p>We have a team of highly skilled and experienced engineers who are passionate about delivering exceptional services to our clients.</p> */}
-                </div>
+
                 <div className="f2">
-                    <h2>OFFICE</h2>
+                    <h2>OFFICE :</h2>
                     <p>No. 24, 1st Floor,Railway Layout,<br />  2nd Stage, Ullal Road,Bhavani Nagar,<br /> Bangalore 560110,Karnataka,INDIA.</p>
                 </div>
+
                 <div className="f3">
                     <ul>
-                        <h2>LINKS</h2>
+
                         <li><a href="#" onClick={home}>Home</a></li>
                         <li><a href="#" onClick={service}>Services</a></li>
                         <li><a href="#" onClick={career}>Careers</a></li>
                         <li><a href="#" onClick={contact}>Contact Us</a></li>
                     </ul>
                 </div>
-                <div className="f4">
-                    <h3>Know Us</h3>
-                    <form action="https://formspree.io/f/mdkgaakr" onSubmit={handleSubmit} method="POST">
-                        <input id="email"
-                            type="email"
-                            name="email" placeholder="Enter email" /><ValidationError
-                            prefix="Email"
-                            field="email"
-                            errors={state.errors}
-                        />
-
-                        <button type="submit" disabled={state.submitting}>Send</button>
-                    </form>
-
+                <div className="f6">
+                    <h2>Follow Us :</h2>
+                    <i className="fab fa-linkedin-in" onClick={linkedin}></i>
                     <i className="fab fa-linkedin-in" onClick={linkedin}></i>
                 </div>
 
-                <hr />
-                <div className="f5">
-                    <h2>© Inspirit Engineering Solutions</h2>
-                </div>
+
+            </div>
+            <hr />
+            <div className="f5">
+                <h2>Copyright © 2024 Inspirit - All Rights Reserved.</h2>
             </div>
         </div>
     )

@@ -27,32 +27,32 @@ function MechanicalServices() {
                 <section id="automotive">
                     <img src={img2} alt="Automotive" />
                     <h1>Automotive</h1>
-                    <p>BIW Line Engineering Process Planning Design & Detailing Robotic Simulation Documents</p>
+                    <p>BIW Line Engineering <br /> Process Planning <br /> Design & Detailing <br /> Robotic Simulation <br /> Documents</p>
                     <button onClick={handleCLick} >View More</button>
                 </section>
 
                 <section id="automation">
                     <img src={img3} alt="Automation" />
                     <h1>Automation</h1>
-                    <p>SPM (Special Purpose Machines) Assembly Automation Robotics</p>
+                    <p>SPM (Special Purpose Machines) <br /> Assembly Automation <br /> Robotics</p>
                 </section>
 
                 <section id="cad-services">
                     <img src={img4} alt="CAD Services" />
                     <h1>CAD Services</h1>
-                    <p>2D-3D Conversions Drafting Services CAD Customization</p>
+                    <p>2D-3D Conversions <br /> Drafting Services <br /> CAD Customization</p>
                 </section>
 
                 <section id="manufacturing">
                     <img src={img5} alt="Manufacturing" />
                     <h1>Manufacturing</h1>
-                    <p>Contract Manufacturing Spare Parts Manufacturing Fixtures, Grippers etc...</p>
+                    <p>Contract Manufacturing <br /> Spare Parts Manufacturing <br /> Fixtures, Grippers etc...</p>
                 </section>
 
                 <section id="system-integration">
                     <img src={img6} alt="System Integration" />
                     <h1>System Integration</h1>
-                    <p>Unique Offering & Application Specific Solutions</p>
+                    <p>Unique Offering & Application Specific <br /> Solutions</p>
                 </section>
 
                 <section id="spclPurposeMachines">

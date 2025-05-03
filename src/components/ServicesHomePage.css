@@ -6,7 +6,10 @@
     flex-wrap: wrap;
     min-height: 100vh;
     padding: 40px;
-    background-image: url(https://static.wixstatic.com/media/fbe21a_eb1cd189efc64ca2927b12a189d73ea4f000.jpg/v1/fill/w_1521,h_503,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/fbe21a_eb1cd189efc64ca2927b12a189d73ea4f000.jpg);
+    background-image: url(./assets/Mechpage.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container2 .btn1,
