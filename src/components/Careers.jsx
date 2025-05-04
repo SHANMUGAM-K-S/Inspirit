@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import './Careers.css'
+import './Careers.css'; import PhoneInput from 'react-phone-number-input';
 import { useForm, ValidationError } from '@formspree/react';
 
 
@@ -8,6 +8,7 @@ const Careers = () => {
     const [formData, setFormData] = useState({ email: "", phone: "", file: null });
     const [errors, setErrors] = useState({});
     const [state, handleSubmits] = useForm("mdkgaakr");
+    const [value, setValue] = useState('');
     const [file, setFile] = useState(null);
     const [dragActive, setDragActive] = useState(false); const fileInputRef = useRef(null)
 
@@ -139,7 +140,13 @@ const Careers = () => {
                         />
                         {errors.email && <p style={{ color: "red" }}>{errors.email}</p>}
                         <br />
-                        <input type="tel" id="number" pattern="\d{10}" maxLength="10" inputMode="numeric" name="ContactNumber" onChange={(e) => setFormData({ ...formData, phone: e.target.value })} placeholder='Contact Number' required min="1000000000" max="9999999999" />
+                        <PhoneInput className="sha" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', }}
+                            placeholder="Enter phone number"
+                            value={value}
+                            maxLength={11}
+                            onChange={setValue}
+                            defaultCountry="IN"
+                        />
                         <ValidationError
                             prefix="number"
                             field="number"
@@ -171,6 +178,10 @@ const Careers = () => {
                     </form>
                 </div>
 
+            </div>
+
+            <div >
+                <button className="buttonss" onClick={() => { document.documentElement.scrollTop = 0; }}>↑</button>
             </div>
 
         </div>

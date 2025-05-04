@@ -7,6 +7,34 @@
     margin-bottom: auto;
 }
 
+.buttons {
+    margin-bottom: -650px;
+    position: absolute;
+    bottom: 2%;
+    right: 3%;
+    padding: 15px 23px;
+    border: none;
+    border-radius: 50%;
+    opacity: 0.2;
+    background: red;
+    z-index: 9999;
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.buttons:hover {
+    opacity: 1;
+}
+
+.contact-page {
+    background-image: url(./assets/contact-front.jpg);
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .web-dev {
     background: rgb(4, 4, 61);
     width: 100%;
@@ -52,7 +80,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.mech-des {
+
+/* .mech-des {
     width: 100%;
     height: 90vh;
     background-image: url(./assets/mechdes.png);
@@ -63,8 +92,8 @@
     display: flex;
     margin-top: 2px;
     margin-bottom: 2px;
-}
-
+} */
+/* 
 .contacts {
     width: 100%;
     margin-bottom: -5px;
@@ -75,14 +104,62 @@
     background-position: center;
     overflow: hidden;
     display: flex;
+} */
+
+
+
+.contac::selection {
+    background: orangered;
+    color: white;
+}
+
+.contacts {
+    background-image: url(./assets/contact-2.jpg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.office,
+.cnts {
+    margin-top: 150px;
+}
+
+.office h2 {
+    font-family: Orbitron, sans-serif;
+}
+
+.office p {
+    font-family: Poppins, sans-serif;
+    width: 300px;
+    font-size: 18px;
+}
+
+.business {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.business h4 {
+    font-size: 18px;
+    font-family: Poppins, sans-serif;
+}
+
+.business a {
+    font-size: 18px;
+    text-decoration: none;
+    font-family: Poppins, sans-serif;
 }
 
 .cnts {
-    background: rgb(228, 228, 228);
+    background: white;
     width: 350px;
-    height: 400px;
-    margin-top: 40px;
-    margin-left: 900px;
+    height: 410px;
+    margin-bottom: 10px;
     border-radius: 5px;
 }
 
@@ -95,15 +172,25 @@
     width: 280px;
     font-family: 'Poppins', sans-serif;
     color: rgb(57, 56, 56);
+    background: rgb(247, 246, 246);
     padding: 5px;
     margin-bottom: 15px;
     border: none;
 
 }
 
-.phone {
+.PhoneInput {
+
+    justify-content: center;
     width: 290px;
-    vertical-align: middle;
+    text-align: center;
+}
+
+.PhoneInputCountryIcon {
+
+    height: 12px;
+    margin-right: 8px;
+
 }
 
 .react-phone-number-input__input {
@@ -123,6 +210,7 @@
     height: 80px;
     font-family: 'Poppins', sans-serif;
     width: 290px;
+    background: rgb(247, 246, 246);
     border: none;
 }
 
@@ -145,8 +233,32 @@
 }
 
 @media (max-width:1200px) {
+    .buttons {
+        margin-bottom: -420px;
+        position: absolute;
+        bottom: 2%;
+        right: 93%;
+        padding: 10px 18px;
+        border: none;
+        border-radius: 50%;
+        background: red;
+        z-index: 9999;
+        color: white;
+        cursor: pointer;
+        opacity: 0.2;
+        font-size: 24px;
+    }
+
+    .buttons:hover {
+        opacity: 1;
+    }
+
     .contac {
-        background: white;
+        height: auto;
+    }
+
+    .contact-page {
+        height: 510px;
     }
 
     .contact-page .contact-us h1 {
@@ -158,59 +270,64 @@
     }
 
     .contacts {
-        background-image: none;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
     }
 
     .contacts .cnts {
         margin-top: 40px;
-        margin-left: 230px;
         border-radius: 5px;
         margin-bottom: 20px;
     }
 
     .cnts {
         background: rgb(228, 228, 228);
-        width: 600px;
-        height: 450px;
+        width: 400px;
+        height: 400px;
         margin-top: 40px;
-        margin-left: 900px;
         border-radius: 5px;
     }
 
+    .cnts h1 {
+        font-size: 24px;
+    }
 
     .cnts form input {
-        width: 510px;
+        width: 320px;
         font-family: 'Poppins', sans-serif;
         color: rgb(57, 56, 56);
-        padding: 8px;
+        padding: 5px;
         margin-bottom: 15px;
         border: none;
 
     }
 
-    .phone {
-        width: 525px;
-        vertical-align: middle;
+    .PhoneInput {
+        width: 330px;
     }
 
     .react-phone-number-input__input {
         flex: 1;
         padding-left: 10px;
-        height: 40px;
-        font-size: 16px;
+        height: 20px;
+        font-size: 6px;
     }
 
+    .office {
+        margin-top: 50px;
+    }
 
     .cnts form textarea {
-        height: 120px;
+        height: 80px;
         font-family: 'Poppins', sans-serif;
-        width: 520px;
+        width: 330px;
         border: none;
     }
 
     .cnts form button {
-        margin-left: 100px;
-        padding: 5px 135px;
+        margin-left: 90px;
+        padding: 5px 65px;
         border: none;
         border-radius: 5px;
         font-family: 'Poppins', sans-serif;
@@ -220,133 +337,368 @@
 }
 
 @media (max-width:834px) {
-    .contac {
-        background: white;
-        margin-top: -15px;
+    .buttons {
+        margin-bottom: 180px;
+        position: absolute;
+        bottom: 2%;
+        opacity: 0.2;
+        right: 93%;
+        padding: 10px 18px;
+        border: none;
+        border-radius: 50%;
+        background: red;
+        z-index: 9999;
+        color: white;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    .buttons:hover {
+        opacity: 1;
+    }
+
+    .contact-page {
+        height: 510px;
     }
 
     .contact-page .contact-us h1 {
         color: black;
         text-align: center;
+        margin-top: 30px;
         font-size: 64px;
         font-family: 'Poppins', sans-serif;
     }
 
     .contacts {
-        background-image: none;
-        margin-bottom: -350px;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
     }
 
     .contacts .cnts {
         margin-top: 40px;
-        margin-left: 142px;
         border-radius: 5px;
-
+        margin-bottom: 20px;
     }
 
     .cnts {
         background: rgb(228, 228, 228);
-        width: 550px;
-        height: 400px;
+        width: 310px;
+        height: 330px;
         margin-top: 40px;
-        margin-left: 900px;
         border-radius: 5px;
-    }
-
-    .cnts form input {
-        width: 450px;
-        font-family: 'Poppins', sans-serif;
-        color: rgb(57, 56, 56);
-        padding: 5px;
-        margin-bottom: 15px;
-        border: none;
-
-    }
-
-    .cnts form textarea {
-        height: 100px;
-        font-family: 'Poppins', sans-serif;
-        width: 455px;
-        border: none;
-    }
-
-    .cnts form button {
-        margin-left: 100px;
-        padding: 5px 105px;
-        border: none;
-        border-radius: 5px;
-        font-family: 'Poppins', sans-serif;
-        background: rgb(3, 237, 50);
-        color: white;
-    }
-
-}
-
-@media (max-width:488px) {
-    .contact-page .contact-us h1 {
-        margin-top: 25px;
-        font-size: 28px;
-    }
-
-    .contacts {
-        background-image: none;
-        margin-bottom: -250px;
-        margin-left: 30px;
-    }
-
-    .contacts .cnts {
-        margin-top: 40px;
-        margin-left: 12px;
-        border-radius: 5px;
-
-    }
-
-    .cnts {
-        width: 340px;
-
     }
 
     .cnts h1 {
         font-size: 22px;
-        text-align: center;
     }
 
     .cnts form input {
         width: 250px;
         font-family: 'Poppins', sans-serif;
         color: rgb(57, 56, 56);
-        padding: 5px;
-        margin-bottom: 15px;
+        padding: 4px;
         border: none;
 
     }
 
+    .PhoneInput {
+        width: 257px;
+    }
+
+    .office {
+        margin-top: 50px;
+    }
+
+    .office h2 {
+        font-size: 20px;
+    }
+
+    .office p {
+        font-size: 16px;
+    }
+
+    .business h4 {
+        font-size: 14px;
+    }
+
+    .business a {
+        font-size: 14px;
+    }
+
     .cnts form textarea {
-        height: 100px;
+        height: 40px;
         font-family: 'Poppins', sans-serif;
         width: 255px;
         border: none;
     }
 
     .cnts form button {
-        margin-left: 50px;
-        padding: 5px 55px;
+        margin-left: 60px;
+        padding: 5px 45px;
         border: none;
         border-radius: 5px;
         font-family: 'Poppins', sans-serif;
-        background: rgb(3, 237, 50);
+        background: orangered;
         color: white;
-
     }
 }
 
 
 
-@media (max-width:405px) {
+@media (max-width:510px) {
+    .buttons {
+        margin-bottom: -150px;
+        position: absolute;
+        bottom: 2%;
+        right: 2%;
+        padding: 10px 18px;
+        border: none;
+        border-radius: 50%;
+        background: red;
+        opacity: 0.2;
+        z-index: 9999;
+        color: white;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    .buttons:hover {
+        opacity: 1;
+    }
+
+    .contact-page {
+        height: 450px;
+    }
+
+    .contact-page .contact-us h1 {
+        color: black;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 64px;
+        font-family: 'Poppins', sans-serif;
+    }
 
     .contacts {
-        background-image: none;
-        margin-bottom: -80px;
-        margin-left: 10px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .contacts .cnts {
+        margin-top: 40px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .cnts {
+        background: rgb(228, 228, 228);
+        width: 280px;
+        height: 300px;
+        margin-left: 80px;
+        margin-top: 40px;
+        border-radius: 5px;
+    }
+
+    .cnts h1 {
+        font-size: 20px;
+    }
+
+    .cnts form input {
+        width: 220px;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(57, 56, 56);
+        padding: 3px;
+        border: none;
+
+    }
+
+
+
+    .PhoneInput {
+        width: 225px;
+    }
+
+    .office {
+        margin-top: 20px;
+        margin-left: 80px;
+    }
+
+    .office h2 {
+        font-size: 18px;
+    }
+
+    .office p {
+        font-size: 13px;
+    }
+
+    .business h4 {
+        font-size: 13px;
+        margin-left: -70px;
+    }
+
+    .business a {
+        font-size: 13px;
+    }
+
+    .cnts form textarea {
+        height: 30px;
+        font-family: 'Poppins', sans-serif;
+        width: 220px;
+        border: none;
+    }
+
+    .cnts form button {
+        margin-left: 50px;
+        padding: 5px 45px;
+        border: none;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+        background: red;
+        color: white;
+    }
+
+
+
+    .PhoneInputCountryIconImg {
+        margin-left: 0px;
+        margin-top: 0px;
+        border: none;
+    }
+}
+
+@media (max-width:395px) {
+    .buttons {
+        margin-bottom: -250px;
+        position: absolute;
+        opacity: .2;
+        bottom: 2%;
+        right: 85%;
+        padding: 6px 12px;
+        border: none;
+        border-radius: 50%;
+        background: red;
+        z-index: 9999;
+        color: white;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    .buttons:hover {
+        opacity: 1;
+    }
+}
+
+@media (max-width:380px) {
+    .buttons {
+        margin-bottom: -350px;
+        position: absolute;
+        bottom: 2%;
+        right: 1%;
+        opacity: 0.2;
+        padding: 6px 12px;
+        border: none;
+        border-radius: 50%;
+        background: red;
+        z-index: 9999;
+        color: white;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    .buttons:hover {
+        opacity: 1;
+    }
+
+    .contact-page {
+        height: 450px;
+    }
+
+    .contact-page .contact-us h1 {
+        color: black;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 64px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .contacts {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .contacts .cnts {
+        margin-top: 40px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .cnts {
+        background: rgb(228, 228, 228);
+        width: 260px;
+        height: 280px;
+        margin-left: 60px;
+        margin-top: 40px;
+        border-radius: 5px;
+    }
+
+    .cnts h1 {
+        font-size: 18px;
+    }
+
+    .cnts form input {
+        width: 200px;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(57, 56, 56);
+        padding: 2px;
+        border: none;
+
+    }
+
+    .PhoneInput {
+        width: 205px;
+    }
+
+    .office {
+        margin-top: 20px;
+        margin-left: 80px;
+    }
+
+    .office h2 {
+        font-size: 16px;
+    }
+
+    .office p {
+        font-size: 11px;
+        width: auto;
+    }
+
+    .business h4 {
+        font-size: 11px;
+        margin-left: -70px;
+    }
+
+    .business a {
+        font-size: 11px;
+    }
+
+    .cnts form textarea {
+        height: 25px;
+        font-family: 'Poppins', sans-serif;
+        width: 200px;
+        border: none;
+    }
+
+    .cnts form button {
+        margin-left: 42px;
+        padding: 5px 35px;
+        border: none;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+        background: red;
+        color: white;
     }
 }

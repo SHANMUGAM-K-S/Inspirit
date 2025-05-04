@@ -129,6 +129,9 @@ const Section2 = () => {
                 </div>
 
             </div>
+            <div >
+                <button className="button" onClick={() => { document.documentElement.scrollTop = 0; }}>↑</button>
+            </div>
 
         </div>
     );

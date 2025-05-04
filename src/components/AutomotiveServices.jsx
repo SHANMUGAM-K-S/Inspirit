@@ -5,6 +5,7 @@ import i3 from './assets/designAndDrafting.jpg';
 import i4 from './assets/robotics.png';
 import i5 from './assets/documents.jpg';
 import './Services.css';
+import './Auto.css'
 
 function AutomotiveServices() {
     return (
@@ -43,6 +44,9 @@ function AutomotiveServices() {
                     <h1>Documents</h1>
                     <p>Validation (Clamp, Gripper, Turntable etc...) <br /> Cycle Time & Spot Plan Creation <br /> Pneumatic Drawings <br /> Sequence Sheet <br /> PLP Plan & SHIM Plan <br /> Panel Flor / Joining Process <br /> Ergo Documents <br /> Poka-Yoke <br /> Long Lead / BOP</p>
                 </section>
+            </div>
+            <div >
+                <button className="buttonssss" onClick={() => { document.documentElement.scrollTop = 0; }}>↑</button>
             </div>
         </>
     );
